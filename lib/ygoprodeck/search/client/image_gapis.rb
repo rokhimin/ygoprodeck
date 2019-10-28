@@ -7,9 +7,9 @@ module Ygoprodeck
 		end
 	end
 	
-	class ImageSmall
+	class Image_small
 		attr_reader :image_small_by_id
-		def self.is(image_by_id)
+		def self.is(image_small_by_id)
 			"https://storage.googleapis.com/ygoprodeck.com/pics_small/#{image_small_by_id}.jpg"
 		end
 	end
