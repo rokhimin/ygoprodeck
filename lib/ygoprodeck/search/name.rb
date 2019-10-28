@@ -3,12 +3,17 @@ module Ygoprodeck
 	class Name
 		attr_reader :name
 		def self.is(name)
-			@name = name
-			url = "#{Ygoprodeck::Endpoint.is}?name=#{@name}"
+			url = "#{Ygoprodeck::Endpoint.is}?name=#{name}"
 			uri = URI(url)
 			response = Net::HTTP.get(uri)
 			load = JSON.parse(response)
-			load
+			
+			if load[0] == nil
+				'{"error"=>"No card matching your query was found in the database."}'
+			else
+				load[0]
+			end
+			
 		end
 	end
 	
