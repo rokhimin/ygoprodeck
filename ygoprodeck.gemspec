@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["rokhim.whd@gmail.com"]
   spec.summary       = "ygoprodeck API wrapper for search yugioh's card"
   spec.description   = "ygoprodeck API wrapper for search yugioh card"
-  spec.homepage      = "http://github.com/rokhimin/goprodeck"
+  spec.homepage      = "http://github.com/rokhimin/ygoprodeck"
   spec.license       = "MIT"
  
   spec.files         = `git ls-files -z`.split("\x0")
