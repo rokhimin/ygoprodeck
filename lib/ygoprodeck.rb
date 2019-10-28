@@ -15,5 +15,4 @@ require 'ygoprodeck/search/archetype'
 require 'ygoprodeck/search/banlist'
 
 module Ygoprodeck
-	
 end
