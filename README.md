@@ -1,6 +1,8 @@
 # Ygoprodeck
 
 ![Lang](https://img.shields.io/badge/Language-Ruby-red)
+[![Gem](https://img.shields.io/gem/v/ygoprodeck.svg)](https://rubygems.org/gems/ygoprodeck)
+[![Gem](https://img.shields.io/gem/dt/ygoprodeck.svg)](https://rubygems.org/gems/ygoprodeck)
 [![Build Status](https://travis-ci.com/rokhimin/ygoprodeck.svg?branch=master)](https://travis-ci.com/rokhimin/ygoprodeck)
 
 API wrapper for search yugioh card
