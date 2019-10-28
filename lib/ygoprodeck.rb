@@ -11,6 +11,7 @@ require 'ygoprodeck/search/random'
 require 'ygoprodeck/search/name'
 require 'ygoprodeck/search/list'
 require 'ygoprodeck/search/fuzzy_name'
+require 'ygoprodeck/search/banlist'
 
 module Ygoprodeck
 	
