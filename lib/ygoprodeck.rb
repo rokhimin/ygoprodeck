@@ -7,6 +7,7 @@ require 'ygoprodeck/search/client/endpoint'
 require 'ygoprodeck/search/client/image_gapis'
 #require 'ygoprodeck/search/all_card'
 require 'ygoprodeck/search/name'
+require 'ygoprodeck/search/fuzzy_name'
 
 module Ygoprodeck
 	
