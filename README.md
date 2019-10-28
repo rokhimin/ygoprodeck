@@ -1,8 +1,9 @@
 # Ygoprodeck
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ygoprodeck`. To experiment with that code, run `bin/console` for an interactive prompt.
+![Lang](https://img.shields.io/badge/Language-Ruby-red)
+[![Build Status](https://travis-ci.com/rokhimin/ygoprodeck.svg?branch=master)](https://travis-ci.com/rokhimin/ygoprodeck)
 
-TODO: Delete this and the text above, and describe your gem
+API wrapper for search yugioh card
 
 ## Installation
 
@@ -21,23 +22,95 @@ Or install it yourself as:
     $ gem install ygoprodeck
 
 ## Usage
+first you need :
+```ruby
+require 'ygoprodeck'
+```
 
-TODO: Write usage instructions here
+Fuzzy search : (RECOMMENDED use fuzzy)
+```ruby
+Ygoprodeck::Fname.is('dark magician')
+```
+
+Normal search :
+```ruby
+Ygoprodeck::Name.is('time wizard')
+```
+
+Random search :
+```ruby
+Ygoprodeck::Card.random
+```
+
+List search :
+```ruby
+Ygoprodeck::List.is('magician')
+```
+
+Archetype search :
+```ruby
+Ygoprodeck::Archetype.is('blue-eyes')
+```
+
+All card sets :
+```ruby
+Ygoprodeck::Card.sets
+```
+
+Banlist (TCG, OCG, GOAT) :
+```ruby
+Ygoprodeck::Banlist.tcg
+Ygoprodeck::Banlist.ocg
+Ygoprodeck::Banlist.goat
+```
+
+or look [examples](https://github.com/rokhimin/ygoprodeck/blob/master/examples/search.rb)
+
+#### Noted 
+Rate Limiting on the API is enabled. The rate limit is 20 requests per 1 second
+
+#### Response Information
+
+##### Monster Cards
+- id - ID or Passocde of the card.
+- name - Name of the card.
+- type - The type of card you are viewing (Normal Monster, Effect Monster, Synchro Monster, etc).
+- desc - Card description/effect.
+- atk - The ATK value of the card.
+- def - The DEF value of the card.
+- level - The Level/RANK of the card.
+- race - The card race which is officially called type (Spellcaster, Warrior, Insect, etc).
+- attribute - The attribute of the card.
+
+##### Spell/Trap Cards
+
+- id - ID or Passocde of the card.
+- name - Name of the card.
+- type - The type of card you are viewing (Spell Card or Trap Card).
+- desc - Card description/effect.
+- race - The card race which is officially called type for Spell/Trap Cards (Field, Equip, Counter, etc).
+
+##### Additional Response for Pendulum Monsters
+
+- scale - The Pendulum Scale Value.
+
+##### Additional Response for Link Monsters
+
+- linkval - The Link Value of the card if it's of type "Link Monster".
+- linkmarkers - The Link Markers of the card if it's of type "Link Monster". This information is returned as an array.
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+#### Test
+```
+rake spec 
+```
 
 ## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ygoprodeck. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Fork and Pull Request to contibuting https://github.com/rokhimin/ygoprodeck .
 
 ## License
-
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Code of Conduct
-
-Everyone interacting in the Ygoprodeck project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/ygoprodeck/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Ygoprodeck project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rokhimin/ygoprodeck/blob/master/CODE_OF_CONDUCT.md).
