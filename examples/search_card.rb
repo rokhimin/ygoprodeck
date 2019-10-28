@@ -1,6 +1,6 @@
 require 'ygoprodeck'
 
-z = Ygoprodeck::Name.is('Dark Magician')
+z = Ygoprodeck::Fname.is('diamond core')
 puts z
 puts '#' *10
 puts Ygoprodeck::Image.is(z['id'])
