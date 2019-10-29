@@ -29,7 +29,7 @@ first you need :
 require 'ygoprodeck'
 ```
 
-Fuzzy search : (RECOMMENDED use fuzzy)
+Fuzzy search : (RECOMMENDED)
 ```ruby
 Ygoprodeck::Fname.is('dark magician')
 ```
