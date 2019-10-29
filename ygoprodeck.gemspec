@@ -15,7 +15,6 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0")
   spec.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
 	spec.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
-	spec.bindir        = 'exe'
   spec.require_paths = ["lib"]
 	
   spec.required_ruby_version = '>= 2.0.0'
