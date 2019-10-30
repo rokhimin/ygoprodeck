@@ -24,7 +24,7 @@ Or install it yourself as:
     $ gem install ygoprodeck
 
 ## Usage
-first you need :
+First :
 ```ruby
 require 'ygoprodeck'
 ```
@@ -66,7 +66,7 @@ Ygoprodeck::Banlist.ocg
 Ygoprodeck::Banlist.goat
 ```
 
-or look [examples](https://github.com/rokhimin/ygoprodeck/blob/master/examples/search.rb)
+or look [examples](https://github.com/rokhimin/ygoprodeck/blob/master/examples)
 
 #### Noted 
 Rate Limiting on the API is enabled. The rate limit is 20 requests per 1 second
