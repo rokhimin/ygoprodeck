@@ -31,12 +31,12 @@ require 'ygoprodeck'
 
 Fuzzy search : (RECOMMENDED)
 ```ruby
-Ygoprodeck::Fname.is('dark magician')
+Ygoprodeck::Fname.is(name card)
 ```
 
 Normal search :
 ```ruby
-Ygoprodeck::Name.is('time wizard')
+Ygoprodeck::Name.is(name card)
 ```
 
 Random search :
@@ -46,12 +46,12 @@ Ygoprodeck::Card.random
 
 List search :
 ```ruby
-Ygoprodeck::List.is('magician')
+Ygoprodeck::List.is(name card)
 ```
 
 Archetype search :
 ```ruby
-Ygoprodeck::Archetype.is('blue-eyes')
+Ygoprodeck::Archetype.is(name archetype)
 ```
 
 All card sets :
