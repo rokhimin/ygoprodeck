@@ -1,7 +1,40 @@
-Metrics/LineLength:
-  Max: 120
-Documentation:
+# Disable all metrics.
+Metrics/AbcSize:
   Enabled: false
-StringLiterals:
-  EnforcedStyle: double_quotes
-	
+
+Metrics/BlockNesting:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Security/Eval:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+  
