@@ -66,6 +66,11 @@ Ygoprodeck::Banlist.ocg
 Ygoprodeck::Banlist.goat
 ```
 
+Check Database Version :
+```ruby
+Ygoprodeck::CheckDbVer.info
+```
+
 or look [examples](https://github.com/rokhimin/ygoprodeck/blob/master/examples)
 
 #### Noted 
