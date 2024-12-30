@@ -13,6 +13,7 @@ require 'ygoprodeck/search/list'
 require 'ygoprodeck/search/fuzzy_name'
 require 'ygoprodeck/search/archetype'
 require 'ygoprodeck/search/banlist'
+require 'ygoprodeck/search/check_db_version'
 
 module Ygoprodeck
 end

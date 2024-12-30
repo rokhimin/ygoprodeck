@@ -8,10 +8,10 @@ module Ygoprodeck
 			response = Net::HTTP.get(uri)
 			load = JSON.parse(response)
 			
-			if load[0] == nil
+			if load['data'] == nil
 				'{"error"=>"No card matching your query was found in the database."}'
 			else
-				load
+				load['data']
 			end
 			
 		end
