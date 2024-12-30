@@ -1,6 +1,5 @@
 require 'net/http'
 require 'json'
-require 'ygoprodeck'
 
 			endpoint = "https://db.ygoprodeck.com/api/v7/"
 			f_name = "dark magician"
