@@ -3,7 +3,7 @@ module Ygoprodeck
 	class Archetype
 		attr_reader :archetype
 		def self.is(archetype)
-			url = "#{Ygoprodeck::Endpoint.is}?archetype=#{archetype}"
+			url = "#{Ygoprodeck::Endpoint.is}cardinfo.php?archetype=#{archetype}"
 			uri = URI(url)
 			response = Net::HTTP.get(uri)
 			load = JSON.parse(response)

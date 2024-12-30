@@ -3,12 +3,12 @@ require 'ygoprodeck'
 # yugi is example, you free to change variable name
 yugi = Ygoprodeck::Fname.is('dark magician') # example I wanna search 'dark magician' using fuzzy search
 
-puts yugi # => get all information of dark magician (name,id,level,attr,atk,def,etc)
+#puts yugi # => get all information of dark magician (name,id,level,attr,atk,def,etc)
 
 puts '#' *10
 
 # => get specific information of dark magician
-puts yugi['id']
+puts yugi['data'][0]['id']
 puts yugi['name'] 
 puts yugi['attribute'] 
 puts yugi['type'] 
