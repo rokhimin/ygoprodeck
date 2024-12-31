@@ -1,4 +1,4 @@
-require "bundler/setup"
+require "bundler"
 require "ygoprodeck"
 
 RSpec.configure do |config|
