@@ -28,14 +28,14 @@ First :
 require 'ygoprodeck'
 ```
 
-Fuzzy search : (RECOMMENDED)
+Fuzzy search :
 ```ruby
-Ygoprodeck::Fname.is(name card)
+Ygoprodeck::Fname.is(NAME_CARD)
 ```
 
 Normal search :
 ```ruby
-Ygoprodeck::Name.is(name card)
+Ygoprodeck::Name.is(NAME_CARD)
 ```
 
 Random search :
@@ -45,12 +45,12 @@ Ygoprodeck::Card.random
 
 List search :
 ```ruby
-Ygoprodeck::List.is(name card)
+Ygoprodeck::List.is(NAME_CARD)
 ```
 
 Archetype search :
 ```ruby
-Ygoprodeck::Archetype.is(name archetype)
+Ygoprodeck::Archetype.is(NAME_ARCHETYPE)
 ```
 
 All card sets :
