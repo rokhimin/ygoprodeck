@@ -3,7 +3,6 @@
 ![Lang](https://img.shields.io/badge/language-ruby-red)
 [![Gem](https://img.shields.io/gem/v/ygoprodeck.svg)](https://rubygems.org/gems/ygoprodeck)
 [![Gem](https://img.shields.io/gem/dt/ygoprodeck.svg)](https://rubygems.org/gems/ygoprodeck)
-[![Build Status](https://travis-ci.com/rokhimin/ygoprodeck.svg?branch=master)](https://travis-ci.com/rokhimin/ygoprodeck)
 
 API wrapper for search yugioh card
 
@@ -74,7 +73,7 @@ Ygoprodeck::CheckDbVer.info
 or look [examples](https://github.com/rokhimin/ygoprodeck/blob/master/examples)
 
 #### Noted 
-Rate Limiting on the API is enabled. The rate limit is 20 requests per 1 second
+Rate Limiting on the API is enabled from YGOPRODECK. The rate limit is 20 requests per 1 second
 
 #### Response Information
 
