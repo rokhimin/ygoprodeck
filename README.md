@@ -1,9 +1,9 @@
 # Ygoprodeck
 
 ![Lang](https://img.shields.io/badge/language-ruby-red)
-[![Gem](https://img.shields.io/gem/v/ygoprodeck.svg)](https://rubygems.org/gems/ygoprodeck)
-[![Gem](https://img.shields.io/gem/dt/ygoprodeck.svg)](https://rubygems.org/gems/ygoprodeck)
-[![Build Status](https://travis-ci.com/rokhimin/ygoprodeck.svg?branch=master)](https://travis-ci.com/rokhimin/ygoprodeck)
+[![Gem Version](https://img.shields.io/gem/v/ygoprodeck.svg)](https://rubygems.org/gems/ygoprodeck)
+[![Gem Downloads](https://img.shields.io/gem/dt/ygoprodeck.svg)](https://rubygems.org/gems/ygoprodeck)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 API wrapper for search yugioh card
 
