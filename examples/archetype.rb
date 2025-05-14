@@ -1,6 +1,6 @@
 require 'ygoprodeck'
 
-# kaiba is example, you free to change variable name
+# kaiba is example, you free to change card name
 kaiba = Ygoprodeck::Archetype.is('blue-eyes') # example I wanna search 'blue-eyes' archetype
 
 	# make for looping for listing archetype
