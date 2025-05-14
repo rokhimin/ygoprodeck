@@ -108,9 +108,9 @@ Rate Limiting on the API is enabled. The rate limit is 20 requests per 1 second
 
 ## Development
 
-#### Test
+#### Unit Test
 ```
-rake spec 
+rspec 
 ```
 
 ## Contributing
