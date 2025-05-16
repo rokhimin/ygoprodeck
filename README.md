@@ -24,7 +24,7 @@ Or install it yourself as:
     $ gem install ygoprodeck
 
 ## Usage
-First :
+
 ```ruby
 require 'ygoprodeck'
 ```
@@ -72,19 +72,19 @@ Ygoprodeck::CheckDbVer.info
 ```
 
 Get Full Image :
-```
+```ruby
 yugi = Ygoprodeck::Fname.is(*name)
 Ygoprodeck::Image.is(yugi['id'])
 ```
 
 Get Cropped Image :
-```
+```ruby
 yugi = Ygoprodeck::Fname.is(*name)
 Ygoprodeck::Image_small.is(yugi['id'])
 ```
 
 Matching :
-```
+```ruby
 Ygoprodeck::Match.is(*name)
 ```
 
