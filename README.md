@@ -29,14 +29,14 @@ First :
 require 'ygoprodeck'
 ```
 
-Fuzzy search : (RECOMMENDED)
+Fuzzy search : 
 ```ruby
-Ygoprodeck::Fname.is(name card)
+Ygoprodeck::Fname.is(*name)
 ```
 
 Normal search :
 ```ruby
-Ygoprodeck::Name.is(name card)
+Ygoprodeck::Name.is(*name)
 ```
 
 Random search :
@@ -46,12 +46,12 @@ Ygoprodeck::Card.random
 
 List search :
 ```ruby
-Ygoprodeck::List.is(name card)
+Ygoprodeck::List.is(*name)
 ```
 
 Archetype search :
 ```ruby
-Ygoprodeck::Archetype.is(name archetype)
+Ygoprodeck::Archetype.is(*name)
 ```
 
 All card sets :
@@ -69,6 +69,23 @@ Ygoprodeck::Banlist.goat
 Check Database Version :
 ```ruby
 Ygoprodeck::CheckDbVer.info
+```
+
+Get Full Image :
+```
+yugi = Ygoprodeck::Fname.is(*name)
+Ygoprodeck::Image.is(yugi['id'])
+```
+
+Get Cropped Image :
+```
+yugi = Ygoprodeck::Fname.is(*name)
+Ygoprodeck::Image_small.is(yugi['id'])
+```
+
+Matching :
+```
+Ygoprodeck::Match.is(*name)
 ```
 
 or look [examples](https://github.com/rokhimin/ygoprodeck/blob/master/examples)
