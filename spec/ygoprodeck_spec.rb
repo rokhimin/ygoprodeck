@@ -8,4 +8,6 @@ RSpec.describe Ygoprodeck do
     expect(Ygoprodeck::Endpoint.is).not_to be nil
   end
 
+
+  
 end
