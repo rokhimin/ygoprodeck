@@ -1,3 +1,3 @@
-require 'ygoprodeck'
+require "ygoprodeck"
 
 puts Ygoprodeck::CheckDbVer.info

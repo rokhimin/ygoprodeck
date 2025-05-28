@@ -1,4 +1,4 @@
-require 'ygoprodeck'
+require "ygoprodeck"
 
 puts Ygoprodeck::Banlist.tcg
 #puts Ygoprodeck::Banlist.ocg
