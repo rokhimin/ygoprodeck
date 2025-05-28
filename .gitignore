@@ -9,3 +9,4 @@
 node_modules
 .rspec_status
 Gemfile.lock
+package-lock.json
