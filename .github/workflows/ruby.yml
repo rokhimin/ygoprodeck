@@ -22,14 +22,8 @@ jobs:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: false
 
-      - name: Remove vendor/bundle cache folder
-        run: rm -rf ./vendor/bundle
-
-      - name: Install Bundler 2.5.23
-        run: gem install bundler -v 2.5.23
-
-      - name: Install dependencies with Bundler 2.5.23
-        run: bundle _2.5.23_ install
-
-      - name: Run tests with Bundler 2.5.23
-        run: bundle _2.5.23_ exec rspec --format documentation
+      - name: Install bundler and run tests
+        run: |
+          gem install bundler -v 2.5.23
+          bundle _2.5.23_ install
+          bundle _2.5.23_ exec rspec --format documentation
