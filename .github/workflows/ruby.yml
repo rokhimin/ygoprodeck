@@ -20,14 +20,13 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby-version }}
-          bundler-cache: true
-
+          bundler-cache: false
 
       - name: Install specific Bundler version
         run: gem install bundler -v 2.5.23
 
       - name: Install dependencies
-        run: bundle install
+        run: bundle _2.5.23_ install
 
       - name: Run RSpec tests with documentation format
-        run: bundle exec rspec --format documentation
+        run: bundle _2.5.23_ exec rspec --format documentation
