@@ -88,7 +88,7 @@ Matching :
 Ygoprodeck::Match.is(*name)
 ```
 
-or look [examples](https://github.com/rokhimin/ygoprodeck/blob/master/examples)
+or look [examples](https://github.com/whdzera/ygoprodeck/blob/master/examples)
 
 #### Noted 
 Rate Limiting on the API is enabled. The rate limit is 20 requests per 1 second
@@ -131,7 +131,7 @@ rspec
 ```
 
 ## Contributing
-Fork and Pull Request to contibuting https://github.com/rokhimin/ygoprodeck .
+Fork and Pull Request to contibuting https://github.com/whdzera/ygoprodeck .
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
